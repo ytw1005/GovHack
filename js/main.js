@@ -15,3 +15,11 @@ function filterFunction() {
         }
     }
 }
+
+function nextq() {
+    document.getElementById("first-q").style.display = "none";
+    document.getElementById("nextbtn").style.display = "none";
+    document.getElementById("header").classList.toggle("");
+    // document.getElementById("first-q").style.opacity = 0;
+    // document.getElementById("first-q").style.transition = "opacity 3s ease-in-out";
+}

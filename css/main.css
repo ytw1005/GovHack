@@ -9,11 +9,41 @@ a {
     text-decoration: none;
     font-size: 18px;
 }
+
+input {
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
 * {
     /* margin: auto; */
 }
 
+#header {
+    width: 100%;
+    height: 40%;
+}
+
+#header img {
+    border-radius: 50%;
+    /* width: 20%; */
+    height: 75%;
+    margin-top: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    transition: width 0.3s;
+}
+
+#header1 {
+    height: 20%;
+}
+
 form {
+    
+}
+
+#first-q {
+    /* display: none; */
     display: inline-block;
     vertical-align: middle;
     width: 60%;
@@ -25,32 +55,49 @@ form {
     left: 20%;
     padding:10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
 }
 
 #in {
-    width: 50%;
-    height: 2em;
+    width: 95%;
+    height: 3em;
     font-size: 16px;
-    border-radius: 5%;
-    margin: 5px;
-    float: left;
+    border-radius: 25px;
+    margin: auto;
+    padding-left: 20px;
+    box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.3);
+    /* margin-top: 5px; */
 }
 #options a {
     width: 100%;
+    height: 40px;
     float: left;
-    background: aliceblue;
-    margin-bottom: 1px;
+    background: rgba(255, 255, 255,1);
+    margin-bottom: 3px;
+    border-radius: 3px;
+    color: black;
+}
+
+#options a:hover {
+    background: rgba(87, 166, 206, 1);
 }
 
 #options {
     display: none;
-    
+    margin-top: 0.5em;
 }
+
+#in:focus {
+    outline: none;
+    border-radius: 25px 25px 0px 0px;
+}
+
 #in:focus+#options {
-    width: 50%;
+    width: 97%;
     display: block;
-    position: absolute;
-    margin-top: 2em;
+    margin: auto;
+    /* position: absolute; */
+    /* margin-top: 2em; */
 }
 
 .ds-content {
@@ -63,7 +110,18 @@ form {
     display: none;
 }
 
+.next-img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 8%;
+}
+#next-btn:hover~.next-img {
+    display:none;
+    /* display: none; */
+}
 
+#next-btn:hover~
 
 input[type=submit] {
     margin: 10px;
