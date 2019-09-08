@@ -7,17 +7,32 @@
    <title>Index page </title>
    </head>
    <body>
+      <div id="header" class="header1">
+         <img src="images/logo.png" />
+      </div>
       <form method="POST">
-         <!-- <div id="dropdownsearch" class="ds-content"> -->
-         <input type="text" id="in" placeholder="Enter your interested industry.."
-         onkeyup="filterFunction()">
-         <div id="options">
-            <a href="#">it</a>
-            <a href="#">health</a>
-            <a href="#">xxx</a>
-         </div>  
-         <!-- </div> -->
-         <input type="submit" value="Search">
+         <div id="first-q">
+            <input type="text" id="in" placeholder="ENTER YOUR INTERESTED INDUSTRY.."
+            onkeyup="filterFunction()">
+            <ul id="options">
+               <li onclick="foo()" >it</li>
+               <li onclick="foo()" >health</li>
+               <li onclick="fillin()" >xxx</li>
+               <li onclick="fillin()" >it</li>
+               <li onclick="fillin()" >health</li>
+               <li onclick="fillin()" >xxx</li>
+            </ul>
+         </div>
+         
+         <!-- <input type="submit" value="Search"> -->
+         <!-- <button class="next"></button> -->
+         <a id="nextbtn" href="#" onclick="nextq()">
+            <img class="next-img" src="images/left-arrow.png" />
+         </a>
+
+         <div id="second-q">
+
+         </div>
       </form>
       
 
