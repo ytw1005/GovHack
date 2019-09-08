@@ -32,13 +32,22 @@ function filterFunction2(me) {
     }
 }
 
+if (window.location.href == "index2.html") {
+    console.log("hiii")
+    window.onload = function() {
+        window.prompt("hiii");
+        document.getElementById("header").classList.toggle("header2");
+    }
+}
 
 function nextq() {
     document.getElementById("first-q").style.display = "none";
     document.getElementById("nextbtn").style.display = "none";
     console.log(document.getElementById("header").classList.contains("header1"));
-    document.getElementById("header").classList.toggle("header2");
-    document.getElementById("second-q").style.display = "block";
+    // document.getElementById("header").classList.toggle("header2");
+    // window.location.href = "templates/index2.html";
+
+    // document.getElementById("second-q").style.display = "block";
     // document.getElementById("sendit").style.display = "block";
     // document.getElementById("first-q").style.opacity = 0;
     // document.getElementById("first-q").style.transition = "opacity 3s ease-in-out";

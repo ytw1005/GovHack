@@ -24,16 +24,17 @@
          <!-- <input type="submit" value="Search"> -->
          <!-- <button class="next"></button> -->
          <button type="submit">Jobs</button>
+         </a>
 
-         <div id="second-q">
-            <input type="text" id="in2" name="jobs" placeholder="ENTER YOUR INTERESTED JOB.."
+         <!-- <div id="second-q">
+            <input type="text" id="in2" placeholder="ENTER YOUR INTERESTED JOB.."
             onkeyup="filterFunction2(this)">
             <div id="options2">
                {% for occupations in all_occupations %}
-                  <a onmouseover="fillin2(this)" href="#" name="jobs">{{occupations}}</a>
+                  <a onmouseover="fillin2(this)" href="#" >{{occupations}}</a>
                {% endfor %}
             </div> 
-         </div>
+         </div> -->
          <input id="sendit" type="submit" name="map">
       </form>
 

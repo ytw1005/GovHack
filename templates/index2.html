@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+   <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="{{ url_for('static', filename='main2.css')}}">
+   <script type="text/javascript" src="{{ url_for('static', filename='main2.js')}}"></script>
+   <title>Index page </title>
+   </head>
+   <body>
+      <div id="header" class="header1">
+         <img src="static/logo.png" />
+      </div>
+      <form method="POST">
+         <div id="second-q">
+            <input type="text" id="in2" placeholder="ENTER YOUR INTERESTED JOB.."
+            onkeyup="filterFunction2(this)">
+            <div id="options2">
+               {% for occupations in all_occupations %}
+                  <a onmouseover="fillin2(this)" href="#" name="job">{{occupations}}</a>
+               {% endfor %}
+            </div> 
+         </div>
+         <input id="sendit" type="submit" name="map">
+      </form>
+
+      
+
+
+      <!-- <h1> Lit Bubblesort Algo </h1>
+      <Form method="POST">
+         <input name="list" placeholder="Chuck stuff to bubblesort"/>
+		<button type="submit" name="bt">Sort</button>
+      </Form> -->
+   </body>
+</html>
