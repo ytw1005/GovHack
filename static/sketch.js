@@ -78,6 +78,7 @@ var costNormalised = cost/jobList[0].median_salary;
 var ausImg
 function preload(){
   ausImg = loadImage("assets/australia_image.png")
+  backImg= loadImage("images/right-arrow.png")
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -93,6 +94,8 @@ function draw() {
   } else if (inScene3){
     scene3();
   }
+
+  // console.log("x = " + mouseX + " , " + mouseY)
 }
 
 //////////////////////////
@@ -151,12 +154,14 @@ function drawAustralia(){
 function scene3() {
   textSize(30);
   fill(blackColor);
-  text(city, 50, 50)
-  drawJobGraph();
+  textSize(width/25)
+  text(city, 50, 50, 100, 100)
+  drawJobGraph(frameCount);
+  drawBackButton(100);
 }
 
 
-function drawJobGraph() {
+function drawJobGraph(s) {
   let topPadding = 50
   let leftPadding = 50
   let barHeight = 30
@@ -179,13 +184,50 @@ function drawJobGraph() {
     rect(leftPadding, currentHeight + barPadding, barCostLength, barHeight, 100, 100)
 
     push()
+    rectMode(CENTER)
+    let textPadding = 10;
     fill(blackColor)
     textSize(width/80)
-    text('$' + jobList[i].median_salary, leftPadding + barSalaryLength, currentHeight + barPadding, barHeight, 100)
+    text('$' + jobList[i].median_salary, textPadding + leftPadding + barSalaryLength, currentHeight + barPadding + (barHeight/2) + 5)
 
     fill(whiteColor)
     textSize(width/80)
-    text('$' + cost, leftPadding + barCostLength, currentHeight + barPadding,barHeight,100)
+    text('$' + cost, leftPadding + barCostLength- width/15, currentHeight + barPadding + (barHeight/2) + 5)
     pop()
+  }
+}
+
+function drawBackButton(a) {
+  tint(50, 50)
+  image(backImg, 0, 0, width/30, width/30)
+}
+
+// function testMouse(){
+//   if (scene1){
+
+//   } else if (scene2){
+
+//   } else if (scene3){
+//     if (mouseX<30 && mouseY<30){
+      
+//     }
+//   }
+// }
+
+function mousePressed() {
+  console.log("hello")
+  if (inScene1){
+    console.log("1")
+  } else if (inScene2){
+    console.log("2")
+
+  } else if (inScene3){
+    console.log("3")
+    if ((mouseX < 30) && (mouseY < 30)){
+      inScene1 = false;
+      inScene2 = true;
+      inScene3 = false;
+      console.log("yeet")
+    }
   }
 }

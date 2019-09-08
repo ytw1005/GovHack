@@ -1,0 +1,52 @@
+ocode,occupation,projemp
+11,"Chief Executives, General Managers and Legislators",4.418738959748691
+12,Farmers and Farm Managers,-2.826133245832232
+13,Specialist Managers,10.628071269386293
+14,"Hospitality, Retail and Service Managers",5.34992754691624
+10,Managers nfd,0
+21,Arts and Media Professionals,4.0154416011531655
+22,"Business, Human Resource and Marketing Professionals",7.886892566735525
+23,"Design, Engineering, Science and Transport Professionals",8.147475740249389
+24,Education Professionals,8.934727930879026
+25,Health Professionals,16.34584976856566
+26,ICT Professionals,15.958020430492745
+27,"Legal, Social and Welfare Professionals",12.97297172671942
+20,Professionals nfd,4.806467329047004
+31,"Engineering, ICT and Science Technicians",7.101713505063067
+32,Automotive and Engineering Trades Workers,1.253217213483023
+33,Construction Trades Workers,6.463556300158253
+34,Electrotechnology and Telecommunications Trades Workers,1.1287046527014943
+35,Food Trades Workers,14.158184470804402
+36,Skilled Animal and Horticultural Workers,11.58396515831826
+39,Other Technicians and Trades Workers,1.5260229275241022
+30,Technicians and Trades Workers nfd,3.7855363456367765
+41,Health and Welfare Support Workers,12.709790564781226
+42,Carers and Aides,23.58063218947927
+43,Hospitality Workers,13.833486743790363
+44,Protective Service Workers,8.713109513111053
+45,Sports and Personal Service Workers,16.692121955184575
+40,Community and Personal Service Workers nfd,0
+51,Office Managers and Program Administrators,-5.384885698820213
+52,Personal Assistants and Secretaries,-20.49750805621894
+53,General Clerical Workers,3.485455174382405
+54,Inquiry Clerks and Receptionists,2.225570493101618
+55,Numerical Clerks,0.38808950963685523
+56,Clerical and Office Support Workers,-1.243091153916432
+59,Other Clerical and Administrative Workers,4.2171986009197315
+50,Clerical and Administrative Workers nfd,5.461540719498335
+61,Sales Representatives and Agents,3.6596962199810665
+62,Sales Assistants and Salespersons,1.6786481505932
+63,Sales Support Workers,1.9868355739315762
+60,Sales Workers nfd,-4.561018020328525
+71,Machine and Stationary Plant Operators,-3.602419299228395
+72,Mobile Plant Operators,5.580981092330029
+73,Road and Rail Drivers,8.08253927381839
+74,Storepersons,1.3732144099258596
+70,Machinery Operators and Drivers nfd,4.4169642765942525
+81,Cleaners and Laundry Workers,4.033284287619055
+82,Construction and Mining Labourers,9.52120729411807
+83,Factory Process Workers,1.4410332966730535
+84,"Farm, Forestry and Garden Workers",0.6792324801414112
+85,Food Preparation Assistants,11.050626314664088
+89,Other Labourers,5.146933395898835
+80,Labourers nfd,0.9645680052040042
