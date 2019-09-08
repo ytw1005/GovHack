@@ -13,15 +13,15 @@
       <form method="POST">
          <div id="first-q">
             <input type="text" id="in" placeholder="ENTER YOUR INTERESTED INDUSTRY.."
-            onkeyup="filterFunction()">
-            <ul id="options">
-               <li onclick="foo()" >it</li>
-               <li onclick="foo()" >health</li>
-               <li onclick="fillin()" >xxx</li>
-               <li onclick="fillin()" >it</li>
-               <li onclick="fillin()" >health</li>
-               <li onclick="fillin()" >xxx</li>
-            </ul>
+            onkeyup="filterFunction(this)">
+            <div id="options">
+               <a onmouseover="fillin(this)" href="#" >it</a>
+               <a onmouseover="fillin(this)" href="#">health</a>
+               <a onmouseover="fillin(this)" href="#">xxx</a>
+               <a onmouseover="fillin(this)" href="#">it</a>
+               <a onmouseover="fillin(this)" href="#">health</a>
+               <a onmouseover="fillin(this)" href="#">xxx</a>
+            </div>
          </div>
          
          <!-- <input type="submit" value="Search"> -->
@@ -31,9 +31,20 @@
          </a>
 
          <div id="second-q">
-
+            <input type="text" id="in2" placeholder="ENTER YOUR INTERESTED JOB.."
+            onkeyup="filterFunction2(this)">
+            <div id="options2">
+               <a onmouseover="fillin2(this)" href="#" >it</a>
+               <a onmouseover="fillin2(this)" href="#">health</a>
+               <a onmouseover="fillin2(this)" href="#">xxx</a>
+               <a onmouseover="fillin2(this)" href="#">it</a>
+               <a onmouseover="fillin2(this)" href="#">health</a>
+               <a onmouseover="fillin2(this)" href="#">xxx</a>
+            </div> 
          </div>
+         <input id="sendit" type="submit">
       </form>
+
       
 
 

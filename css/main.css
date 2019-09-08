@@ -75,7 +75,18 @@ form {
     box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.3);
     /* margin-top: 5px; */
 }
-#options li {
+#in2 {
+    width: 95%;
+    height: 3em;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: auto;
+    padding-left: 20px;
+    box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.3);
+    /* margin-top: 5px; */
+}
+
+#options a {
     width: 100%;
     height: 40px;
     float: left;
@@ -83,14 +94,32 @@ form {
     margin-bottom: 3px;
     border-radius: 3px;
     color: black;
-    cursor: pointer;
 }
 
-#options li:hover {
+#options a:hover {
     background: rgba(87, 166, 206, 1);
 }
 
 #options {
+    display: none;
+    margin-top: 0.5em;
+}
+
+#options2 a {
+    width: 100%;
+    height: 40px;
+    float: left;
+    background: rgba(255, 255, 255,1);
+    margin-bottom: 3px;
+    border-radius: 3px;
+    color: black;
+}
+
+#options2 a:hover {
+    background: rgba(87, 166, 206, 1);
+}
+
+#options2 {
     display: none;
     margin-top: 0.5em;
 }
@@ -104,6 +133,18 @@ form {
     width: 97%;
     display: block;
     margin: auto;
+    height: 300px;
+    overflow: scroll;
+    /* position: absolute; */
+    /* margin-top: 2em; */
+}
+
+#in2:focus+#options2 {
+    width: 97%;
+    display: block;
+    margin: auto;
+    height: 300px;
+    overflow: scroll;
     /* position: absolute; */
     /* margin-top: 2em; */
 }
@@ -114,7 +155,7 @@ form {
     z-index: 1;
 }
 
-#option {
+.option {
     display: none;
 }
 
@@ -129,13 +170,28 @@ form {
     /* display: none; */
 }
 
-#next-btn:hover~
+#next-btn~#second-q {
+    display: block;
+}
 
-input[type=submit] {
+#second-q {
+    display: none;
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    margin-top: 8em;
+}
+
+#sendit {
     margin: 10px;
     display: block;
-    width: 10em;
-    height: 5em;
-    float: right;
+    width: 5em;
+    height: 2.5em;
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
     box-sizing: content-box;
 }
