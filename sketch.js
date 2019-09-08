@@ -24,7 +24,6 @@ var scene3start;
 // data from post for scene3/4
 var city = 'Canberra';
 var cost = 30000;
-var costNormalised = 0.34; 
 var jobList = [
   {
   jobName: "Data Scientist",
@@ -57,6 +56,7 @@ var jobList = [
   projected_growth: 0.9,
   },
 ]
+var costNormalised = cost/jobList[0].median_salary; 
 
 // // data from post for scene2/3 for undustry no job
 // var cityList {
@@ -164,15 +164,28 @@ function drawJobGraph() {
   for (i = 0; i < 5; i++){
     currentHeight = 200+i*(height/7)
     fill(blackColor)
+    textSize(width/50)
     text(jobList[i].jobName, leftPadding, currentHeight);
    
+    let barPadding = 20;
     fill(blueColor)
     noStroke()
-    rect(leftPadding, currentHeight + 20, jobList[i].median_salary_normalised* width/2, barHeight, 100, 100)
+    let barSalaryLength = jobList[i].median_salary_normalised* width/2;
+    rect(leftPadding, currentHeight + barPadding, barSalaryLength, barHeight, 100, 100)
 
     fill(redColor)
     noStroke()
-    rect(leftPadding, currentHeight + 20, costNormalised* width/2, barHeight, 100, 100)
+    let barCostLength = costNormalised * width/2
+    rect(leftPadding, currentHeight + barPadding, barCostLength, barHeight, 100, 100)
 
+    push()
+    fill(blackColor)
+    textSize(width/80)
+    text('$' + jobList[i].median_salary, leftPadding + barSalaryLength, currentHeight + barPadding, barHeight, 100)
+
+    fill(whiteColor)
+    textSize(width/80)
+    text('$' + cost, leftPadding + barCostLength, currentHeight + barPadding,barHeight,100)
+    pop()
   }
 }
