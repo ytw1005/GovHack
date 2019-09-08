@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+   <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+   <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+   <title>Index page </title>
+   </head>
+   <body>
+      <div id="header" class="header1">
+         <img src="{{ url_for('static', filename='logo.png') }} />
+      </div>
+      <form method="POST">
+         <div id="first-q">
+            <input type="text" id="in" placeholder="ENTER YOUR INTERESTED INDUSTRY.."
+            onkeyup="filterFunction()">
+            <ul id="options">
+               <li onclick="foo()" >it</li>
+               <li onclick="foo()" >health</li>
+               <li onclick="fillin()" >xxx</li>
+               <li onclick="fillin()" >it</li>
+               <li onclick="fillin()" >health</li>
+               <li onclick="fillin()" >xxx</li>
+            </ul>
+         </div>
+         
+         <!-- <input type="submit" value="Search"> -->
+         <!-- <button class="next"></button> -->
+         <a id="nextbtn" href="#" onclick="nextq()">
+            <img class="next-img" src="{{ url_for('static', filename='left-arrow.png') }} />
+         </a>
+
+         <div id="second-q">
+
+         </div>
+      </form>
+      
+
+
+      <!-- <h1> Lit Bubblesort Algo </h1>
+      <Form method="POST">
+         <input name="list" placeholder="Chuck stuff to bubblesort"/>
+		<button type="submit" name="bt">Sort</button>
+      </Form> -->
+   </body>
+</html>
