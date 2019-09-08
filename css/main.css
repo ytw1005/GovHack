@@ -155,10 +155,6 @@ form {
     z-index: 1;
 }
 
-.option {
-    display: none;
-}
-
 .next-img {
     width: 100px;
     height: 100px;
