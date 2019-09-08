@@ -3,6 +3,10 @@
 1. Install Flask
 https://flask.palletsprojects.com/en/1.1.x/installation/
 
+2. Install Pandas and Numpy 
+https://numpy.org
+https://pandas.pydata.org
+
 2. Install Jupyter Notebook
 https://jupyter.org/install
 
