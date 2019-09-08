@@ -15,12 +15,9 @@
             <input type="text" id="in" placeholder="ENTER YOUR INTERESTED INDUSTRY.."
             onkeyup="filterFunction(this)">
             <div id="options">
-               <a onmouseover="fillin(this)" href="#" >it</a>
-               <a onmouseover="fillin(this)" href="#">health</a>
-               <a onmouseover="fillin(this)" href="#">xxx</a>
-               <a onmouseover="fillin(this)" href="#">it</a>
-               <a onmouseover="fillin(this)" href="#">health</a>
-               <a onmouseover="fillin(this)" href="#">xxx</a>
+               {% for industry in all_industries %}
+                  <a onmouseover="fillin(this)" href="#" >{{industry}}</a>
+               {% endfor %}
             </div>
          </div>
          
@@ -34,12 +31,9 @@
             <input type="text" id="in2" placeholder="ENTER YOUR INTERESTED JOB.."
             onkeyup="filterFunction2(this)">
             <div id="options2">
-               <a onmouseover="fillin2(this)" href="#" >it</a>
-               <a onmouseover="fillin2(this)" href="#">health</a>
-               <a onmouseover="fillin2(this)" href="#">xxx</a>
-               <a onmouseover="fillin2(this)" href="#">it</a>
-               <a onmouseover="fillin2(this)" href="#">health</a>
-               <a onmouseover="fillin2(this)" href="#">xxx</a>
+               {% for occupations in all_occupations %}
+                  <a onmouseover="fillin2(this)" href="#" >{{occupations}}</a>
+               {% endfor %}
             </div> 
          </div>
          <input id="sendit" type="submit">
