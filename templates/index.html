@@ -12,31 +12,29 @@
       </div>
       <form method="POST">
          <div id="first-q">
-            <input type="text" id="in" placeholder="ENTER YOUR INTERESTED INDUSTRY.."
+            <input type="text" id="in"  name="industry" placeholder="ENTER YOUR INTERESTED INDUSTRY.."
             onkeyup="filterFunction(this)">
             <div id="options">
                {% for industry in all_industries %}
-                  <a onmouseover="fillin(this)" href="#" >{{industry}}</a>
+                  <a onmouseover="fillin(this)" href="#" name="industry">{{industry}}</a>
                {% endfor %}
             </div>
          </div>
          
          <!-- <input type="submit" value="Search"> -->
          <!-- <button class="next"></button> -->
-         <a id="nextbtn" href="#" onclick="nextq()">
-            <img class="next-img" src="static/left-arrow.png" />
-         </a>
+         <button type="submit">Jobs</button>
 
          <div id="second-q">
-            <input type="text" id="in2" placeholder="ENTER YOUR INTERESTED JOB.."
+            <input type="text" id="in2" name="jobs" placeholder="ENTER YOUR INTERESTED JOB.."
             onkeyup="filterFunction2(this)">
             <div id="options2">
                {% for occupations in all_occupations %}
-                  <a onmouseover="fillin2(this)" href="#" >{{occupations}}</a>
+                  <a onmouseover="fillin2(this)" href="#" name="jobs">{{occupations}}</a>
                {% endfor %}
             </div> 
          </div>
-         <input id="sendit" type="submit">
+         <input id="sendit" type="submit" name="map">
       </form>
 
       
