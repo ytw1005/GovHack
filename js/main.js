@@ -19,7 +19,13 @@ function filterFunction() {
 function nextq() {
     document.getElementById("first-q").style.display = "none";
     document.getElementById("nextbtn").style.display = "none";
-    document.getElementById("header").classList.toggle("");
+    console.log(document.getElementById("header").classList.contains("header1"));
+    document.getElementById("header").classList.toggle("header2");
+    
     // document.getElementById("first-q").style.opacity = 0;
     // document.getElementById("first-q").style.transition = "opacity 3s ease-in-out";
+}
+
+function foo() {
+    console.log("me.id");
 }
